@@ -2,9 +2,8 @@ name: Keep Supabase Alive
 
 on:
   schedule:
-    # 每天 UTC+8 时间 15:00 执行
-    - cron: "0 15 * * *"
-      timezone: Asia/Shanghai
+    # 每小时 执行一次
+    - cron: "0 * * * *"
   # 也支持手动触发测试
   workflow_dispatch:
 
